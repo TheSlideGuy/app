@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+html, body, [class*=Page] {
+  height: 100%; 
+  overflow: hidden;
+}
+.slide {
+  list-style-type: none;
+}
+.presenterPage {
+  
+}
+.presenterPage .active {
+  background-color: #ddd;
+}
+
+/*******/
+
+.audiencePage {
+  background-color: #333;
+  color: #eee;
+
+}
+.audiencePage .slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+}
+.audiencePage .controls {
+  position: fixed;
+  bottom: 0;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-top: 30%;
+
+  opacity: 0;
+  transition: opacity 0.3s; 
+}
+.audiencePage .controls:hover {
+  opacity: 1
+}
