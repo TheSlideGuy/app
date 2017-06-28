@@ -152,12 +152,12 @@ const editorView = (m) =>
         on: {input: (e) => pushUpdate({method: 'setSlides', slides: getCompiled(e.target.value)})}
         }, getText(m.loadedSlides))
     , [m.page]),
-    switchPageButtonView(m.page)
+    h('div.footer', [switchPageButtonView(m.page)])
   ]);
 
 
 function switchPageButtonView(page) {
-  return h('span.c-input-group', ['presenter', 'audience', 'editor'].map(view => 
+  return h('span.switchPageButton.c-input-group', ['presenter', 'audience', 'editor'].map(view => 
       h('a.c-button.c-button--ghost-brand', 
         {
           props: {href: '#' + view},

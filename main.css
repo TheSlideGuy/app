@@ -61,6 +61,19 @@ html, body, [class*=Page] {
 
 .editorPage {
   padding: 1rem;
+  padding-bottom: 4rem;
+  overflow-y: scroll;
+  display: relative;
+  background-color: white;
+}
+.editorPage .footer {
+  background-color: inherit;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem;
+  border-top: 1px solid #aaa;
 }
 .editorPage textarea {
   width: 80%;
@@ -68,3 +81,4 @@ html, body, [class*=Page] {
 
   font-size: 1rem;
 }
+
