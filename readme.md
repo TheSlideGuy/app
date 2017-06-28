@@ -1,5 +1,27 @@
 ## Format of songs
 
+Use two new lines (one blank; `\n\n`) to separate slides. Slides can be multiline, separated by only on newline character `\n`.
+
+Example: 
+
+```
+Light of the world, You step down into darkness.
+Opened my eyes let me see.
+
+Beauty that made this heart adore you
+hope of a life spent with you.`
+
+And here I am to worship,
+Here I am to bow down,
+Here I am to say that you're my God,`
+
+You're altogether lovely,
+Altogether worthy,
+Altogether wonderful to me.
+```
+
+## New idea: Format of songs
+
 
 The following text format will be parsed into a JSON tree.
 
@@ -40,13 +62,13 @@ To simplify the syntax tree format, single new lines within a block of text will
 ```
 [
     {
-        header: {text: "Here..." music and lyrics by Tim Hughes 2003..."}},
+        header: {text: "Here..." music and lyrics by Tim Hughes 2003..."},
         slides: [
             { text: "Light of the world\nYou stepped down into darkness..."
                 , notes: "Slide 1 - Verse 1" },
             { text: "Beauty that made..."}
         ]
-    }
+    },
     {
         //headers are optional
         slides: [

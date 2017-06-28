@@ -9,6 +9,19 @@ html, body, [class*=Page] {
 .slide {
   list-style-type: none;
 }
+
+.button {
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  
+  border: 1px solid #333;
+
+  text-decoration: none;
+  color: inherit;
+}
+/********/
 .presenterPage {
   
 }
@@ -41,4 +54,17 @@ html, body, [class*=Page] {
 }
 .audiencePage .controls:hover {
   opacity: 1
+}
+
+
+/************/
+
+.editorPage {
+  padding: 1rem;
+}
+.editorPage textarea {
+  width: 80%;
+  height: 20rem;
+
+  font-size: 1rem;
 }
